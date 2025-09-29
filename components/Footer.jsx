@@ -12,8 +12,8 @@ const Footer = () => {
     const contact = { address: '1 Sail Street, London, SE11 6NQ', phone: '020 4527 6474', email: 'enquiries@PlumbingPros.com' }
 
   return (
-    <section className='max-w-6xl mx-auto mt-10'>
-        <div className='flex justify-between gap-7'>
+    <section className='max-w-6xl px-10 lg:px-0 mx-auto mt-10'>
+        <div className='flex lg:flex-row flex-col flex-wrap justify-between gap-12 lg:gap-4'>
            <div className="logo">
                 <h1 className='text-[32px] mb-7 w-[260px] font-bold'>Business Logo</h1>
                 <div className="links flex gap-4">
@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
 
 
-            <div className=' w-[430px] flex gap-x-16'>
+            <div className=' w-[430px] flex flex-col md:flex-row lg:flex-row flex-wrap gap-x-0 gap-y-4 lg:gap-y-0 md:justify-between lg:gap-x-16'>
                 <div className="">
                 <h4 className='font-semibold mb-4 text-sm leading-6'>Our Services</h4>
                 <ul className='flex flex-col gap-y-4'>
@@ -66,7 +66,7 @@ const Footer = () => {
             
         </div>
 
-        <footer className='flex items-center mt-20 mb-[60px] justify-between text-sm font-normal leading-4 text-[#2A2F32]'>
+        <footer className='flex flex-col lg:flex-row md:flex-row gap-4 lg:gap-0 items-center mt-20 mb-[60px] justify-between text-sm font-normal leading-4 text-[#2A2F32]'>
             <p>© Plumbing Pros. All Rights Reserved </p>
             <p>Website by IH Adventure And Creative</p>
         </footer>
